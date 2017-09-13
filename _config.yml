@@ -14,15 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# Permalinks
-permalink:           pretty
-
 # Setup
 title:               Kirti Vardhan Rathore
 tagline:             Software Engineer
 url:                 http://krathore.me
-paginate:            1
-baseurl:             ""
+
+#Build Settings
+markdown: kramdown
+theme: minima
 
 # Assets
 #
@@ -44,8 +43,12 @@ github:
 twitter:             kirtivr
 github:              kirtivr
 
+# Pagination
+paginate: 1
+paginate_path: "/"
+
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
 
