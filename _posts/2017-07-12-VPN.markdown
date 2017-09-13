@@ -1,0 +1,8 @@
+---
+layout: post
+title: VPN from the scratch
+git: https://github.com/prashantbarca/LeAmitVPN
+---
+
+Me and Prashant set out to implement a VPN from the scratch.
+We used a TUN interface, and remote machines can ssh into each other using this virtual interface as if they were on the same network.

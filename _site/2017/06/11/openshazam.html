@@ -6,8 +6,8 @@
 
     <title> Kirti's Homepage </title>
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-    <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.png">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/public/favicon.png">
   </head>
   
   <body>
@@ -16,7 +16,7 @@
       <div class="large-12 large-centered columns">
 
         <header class="masthead">
-          <img src="{{ site.baseurl }}/public/face.jpg" alt="Kirti">
+          <img src="/public/face.jpg" alt="Kirti">
         </header>
 
     </div>
@@ -35,28 +35,48 @@ Hello, there. My name is Kirti Vardhan Rathore and I am a Masters student in Com
 	  I enjoy discussing about *nix systems, design patterns, security, Tolkien, education and Full metal alchemist.
 	</p>
         <p>
-	  I am looking for a new job. Check out my <a href="{{ site.baseurl }}/resume.html">Resume</a> if you can offer me one.
+	  I am looking for a new job. Check out my <a href="/resume.html">Resume</a> if you can offer me one.
         </p>
       </div>
 
       <main>
         <h2>Currently working on</h2>
-        {% for post in site.posts %}
+        
           <div class="project-post">
-            <h3><a href="{{ post.git }}">{{ post.title }}</a></h3>
-            {{ post.content }}
+            <h3><a href="https://github.com/BinderFilter/BinderFilter">BinderFilter</a></h3>
+            BinderFilter is a Linux kernel message firewall for Android.
+
+
+
+
+
           </div>
-        {% endfor %}
+        
+          <div class="project-post">
+            <h3><a href="https://github.com/prashantbarca/LeAmitVPN">VPN from the scratch</a></h3>
+            Me and Prashant set out to implement a VPN from the scratch.
+We used a TUN interface, and remote machines can ssh into each other using this virtual interface as if they were on the same network.
+          </div>
+        
+          <div class="project-post">
+            <h3><a href="https://github.com/kirtivr/osshazam">A shazam implementation</a></h3>
+            <p>I implemented Shazam based on the creators’ original paper
+http://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf.
+The fun part was running the FFT based algorithm on our CS cluster.
+The results have been encouraging.</p>
+
+          </div>
+        
       </main>
 
     </div>
 
     <div class="large-2 large-offset-1 columns social">
       <ul>
-	<li><a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i></a></li>
+	<li><a href="https://github.com/kirtivr"><i class="fa fa-github"></i></a></li>
 	<li><a href="https://linkedin.com/in/kirtivr/"><i class="fa fa-linkedin"></i></a></li>
         <li><a href="mailto:kirtivr.bit@gmail.com?Subject=Hello,%20Kirti.I%20am%20not%20phishing%20you!"><i class="fa fa-envelope"></i></a></li>
-        <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://twitter.com/kirtivr"><i class="fa fa-twitter"></i></a></li>
 	<li><a href="https://keybase.io/kirtivr"><i class="fa fa-key"></i></a></li>
       </ul>
     </div>

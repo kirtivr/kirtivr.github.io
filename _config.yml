@@ -44,8 +44,7 @@ twitter:             kirtivr
 github:              kirtivr
 
 # Pagination
-paginate: 1
-paginate_path: "/"
+paginate: 5
 
 # Gems
 plugins:
