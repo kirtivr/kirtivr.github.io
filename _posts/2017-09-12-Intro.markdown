@@ -4,7 +4,8 @@ title: BinderFilter
 git: https://github.com/BinderFilter/BinderFilter
 ---
 
-BinderFilter is a Linux kernel message firewall for Android.
+BinderFilter is a Linux kernel message firewall for Android. Instrumented the kernel to achieve full mediation on all messages passed.
+Provided tools to visualize IPC on Wireshark or as nice granular graphs.
 
 
 

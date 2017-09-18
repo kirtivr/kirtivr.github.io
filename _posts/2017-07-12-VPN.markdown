@@ -4,5 +4,6 @@ title: VPN from the scratch
 git: https://github.com/prashantbarca/LeAmitVPN
 ---
 
-Me and Prashant set out to implement a VPN from the scratch.
-We used a TUN interface, and remote machines can ssh into each other using this virtual interface as if they were on the same network.
+Me and another student set out to implement a VPN from the scratch.
+We created a TUN interface based virtual network and remote machines could ssh into each other if they were on the same network.
+The VPN server was hosted on a raspberry pi.
