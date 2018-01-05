@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Kirti's Homepage </title>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.png">
+  </head>
+  
+  <body>
+
+    <div class="row">
+      <div class="large-12 large-centered columns">
+
+        <header class="masthead">
+          <img src="{{ site.baseurl }}/public/face.jpg" alt="Kirti">
+        </header>
+
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="large-6 large-offset-3 columns">
+
+      <div class="content-section">
+        <h2>whois</h2>
+        <p>
+Hello, there. My name is Kirti Vardhan Rathore and I am a Masters student in Computer Science at Dartmouth College. I like to understand how things work and tinker with them. 
+        </p>
+	<p>
+	  I enjoy discussing about *nix systems, design patterns, security, Tolkien, education and Full metal alchemist.
+	</p>
+        <p>
+	  I am looking for a new job. Check out my <a href="{{ site.baseurl }}/resume.html">Resume</a> if you can offer me one.
+        </p>
+      </div>
+      
+      <main>
+        <h2>Currently working on</h2>
+        {% for post in site.posts %}
+          <div class="project-post">
+            <h3><a href="{{ post.git }}">{{ post.title }}</a></h3>
+            {{ post.content }}
+          </div>
+        {% endfor %}
+      </main>
+
+    </div>
+
+    <div class="large-2 large-offset-1 columns social">
+      <ul>
+	<li><a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i></a></li>
+	<li><a href="https://linkedin.com/in/kirtivr/"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="mailto:kirtivr.bit@gmail.com?Subject=Hello,%20Kirti.I%20am%20not%20phishing%20you!"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a></li>
+	<li><a href="https://keybase.io/kirtivr"><i class="fa fa-key"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  </body>
+</html>
