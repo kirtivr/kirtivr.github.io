@@ -1,7 +1,0 @@
----
-layout: post
-title: A shazam implementation
-git: https://github.com/BinderFilter/BinderFilter
----
-
-BinderFilter is a Linux kernel message firewall for Android.
